@@ -2,12 +2,6 @@
 const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 
-require('selenium-webdriver');
-require('selenium-webdriver/chrome');
-require('chromedriver');
-
-chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
-
 describe('add task', function() {
   let driver
   let vars
